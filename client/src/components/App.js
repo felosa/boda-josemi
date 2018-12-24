@@ -7,6 +7,7 @@ import Secret from './pages/Secret';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import api from '../api';
+
 import logo from '../logo.svg';
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/*<header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">MERN Boilerplate</h1>
           <NavLink to="/" exact>Home</NavLink>
@@ -35,16 +36,17 @@ class App extends Component {
           {!api.isLoggedIn() && <NavLink to="/login">Login</NavLink>}
           {api.isLoggedIn() && <Link to="/" onClick={(e) => this.handleLogoutClick(e)}>Logout</Link>}
           <NavLink to="/secret">Secret</NavLink>
-        </header>
+        </header>*/}
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/countries" component={Countries} />
+          {/*<Route path="/countries" component={Countries} />
           <Route path="/add-country" component={AddCountry} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
-          <Route path="/secret" component={Secret} />
+          <Route path="/secret" component={Secret} />*/}
           <Route render={() => <h2>404</h2>} />
         </Switch>
+
       </div>
     );
   }

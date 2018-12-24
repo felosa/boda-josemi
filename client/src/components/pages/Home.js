@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Home.css';
 
 class Home extends Component {
   // constructor(props) {
@@ -9,8 +10,8 @@ class Home extends Component {
   render() {                
     return (
       <div className="Home">
-        <h2>Home</h2>
-        <p>This is a sample project with the MERN stack</p>
+          <h1>PRÓXIMAMENTE MÁS INFORMACIÓN <br/>DEMNÄCHST MEHR INFOS</h1>
+          <img className="under-construction-img" src="https://res.cloudinary.com/ignlopezsanchez/image/upload/v1545667522/josemiAndGesche.jpg" alt="boda-josemi-gesche"/>
       </div>
     );
   }
